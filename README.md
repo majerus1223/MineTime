@@ -62,3 +62,5 @@ Driver Continue
     sudo chmod +x NvidiaDriver
     sudo ./NvidiaDriver
     
+    
+    https://askubuntu.com/questions/760934/graphics-issues-after-while-installing-ubuntu-16-04-16-10-with-nvidia-graphics
