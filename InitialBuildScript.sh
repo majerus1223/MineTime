@@ -17,7 +17,7 @@ wget https://eggpool.net/dl/EggMinerGpuLin2.tgz?1516891778 -O $HOME/Desktop/mini
 
 tar -xvzf $HOME/Desktop/mining/downloads/EggMiner.tgz.gz -C $HOME/Desktop/mining/miners
 
-git -C $HOME/Desktop/mining/scripts/ clone https://github.com/majerus1223/linux_gpu_mining
+git -C $HOME/Desktop/mining/scripts/ clone https://github.com/majerus1223/MineTime
 
 #Set insane permissions
 chmod 777 -R $HOME/Desktop/mining 
