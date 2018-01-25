@@ -50,3 +50,15 @@ Controlling GPU fan and clocking
 OR
 
     nvidia-settings -a [gpu:0]/GPUFanControlState=1 -a [fan:0]/GPUTargetFanSpeed=85
+    
+    
+
+Driver Continue
+    Download latest driver from nvidia
+    alt + Ctrl + f1
+    sudo service lighdm stop
+    sudo init 3
+    cd Desktop/
+    sudo chmod +x NvidiaDriver
+    sudo ./NvidiaDriver
+    
