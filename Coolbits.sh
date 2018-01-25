@@ -5,10 +5,12 @@
 
 nvidia-smi -L
 
-print "Setting enable all GPUS"
+echo "Setting enable all GPUS"
 nvidia-xconfig --enable-all-gpus
 
-print "Enable coolbits"
+echo "Enable coolbits"
 nvidia-xconfig --cool-bits=12
 
-print "System needs reboot"
+systemctl restart lightdm.service
+
+echo "System needs reboot"
