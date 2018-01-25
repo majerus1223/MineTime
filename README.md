@@ -15,6 +15,19 @@ Will show current power draw
 
     nvidia-smi --query-gpu=power.draw --format=csv,noheader
 
+List GPU Temp and other data
+    
+    nvidia-smi -q -a
+    
+List GPUS
+    
+    nvidia-smi -L
+
+View Performance State
+
+    nvidia-smi -q -d PERFORMANCE
+
+
 
 Add ability to manually control GPUS (enable cool bits)
 
@@ -26,7 +39,7 @@ Restart windows manager after making changes or just reboot
     systemctl restart lightdm.service
     
 
-Set NVIDIA power to power level 1, 2, or 3 (need to research this more)
+Set NVIDIA power to persistance level 1 (need to research this more)
 
     sudo nvidia-smi -pm 1
 
