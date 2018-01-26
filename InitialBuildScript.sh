@@ -5,7 +5,7 @@ apt-get update
 sleep 5
 
 apt-get install htop screen git openssh-server -y
-apt-get install nvidia-387 
+apt-get install nvidia-387 -y
 mkdir -p $HOME/Desktop/mining/downloads
 mkdir -p $HOME/Desktop/mining/scripts
 mkdir -p $HOME/Desktop/mining/other
