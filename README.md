@@ -64,3 +64,8 @@ Driver Continue
     
     
     https://askubuntu.com/questions/760934/graphics-issues-after-while-installing-ubuntu-16-04-16-10-with-nvidia-graphics
+    
+    
+Driver Info
+
+    https://askubuntu.com/questions/206283/how-can-i-uninstall-a-nvidia-driver-completely
