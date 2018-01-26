@@ -33,7 +33,9 @@ git -C $HOME/Desktop/mining/scripts/ clone https://github.com/majerus1223/MineTi
 # Copy configured miner.txt
 cp $HOME/Desktop/mining/scripts/MineTime/miner.txt $HOME/Desktop/mining/miners/EggMinerGpuLin2/miner.txt
 
-pause 10
+# Move miner-deafult.sh to miner.sh
+cp $HOME/Desktop/mining/miners/EggMinerGpuLin2/mine-default.sh $HOME/Desktop/mining/miners/EggMinerGpuLin2/miner.sh
+sleep 10
 
 #Set insane permissions
 chmod 777 -R $HOME/Desktop/mining 
