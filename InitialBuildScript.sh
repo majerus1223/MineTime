@@ -21,17 +21,17 @@ wget https://eggpool.net/dl/EggMinerGpuLin2.tgz?1516891778 -O $HOME/Desktop/mini
 
 tar -xvzf $HOME/Desktop/mining/downloads/EggMiner.tgz.gz -C $HOME/Desktop/mining/miners
 
-chmod 777 $HOME/Desktop/mining/download/teamviewer_amd64.deb
+chmod 777 $HOME/Desktop/mining/downloads/teamviewer_amd64.deb
 
 #install teamviewer
-dpkg -i $HOME/Desktop/mining/download/teamviewer_amd64.deb
+dpkg -i $HOME/Desktop/mining/downloads/teamviewer_amd64.deb
 #resolve dependencies
 apt-get -f install -y 
 
 git -C $HOME/Desktop/mining/scripts/ clone https://github.com/majerus1223/MineTime
 
 # Copy configured miner.txt
-cp $HOME/Desktop/mining/scripts/miner.txt $HOME/Desktop/mining/miners/miner.txt
+cp $HOME/Desktop/mining/scripts/miner.txt $HOME/Desktop/mining/miners/MineTime/miner.txt
 
 pause 10
 
