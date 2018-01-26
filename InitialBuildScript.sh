@@ -29,6 +29,9 @@ apt-get -f install -y
 
 git -C $HOME/Desktop/mining/scripts/ clone https://github.com/majerus1223/MineTime
 
+# Copy configured miner.txt
+cp $HOME/Desktop/mining/scripts/miner.txt $HOME/Desktop/mining/miners/miner.txt
+
 #Set insane permissions
 chmod 777 -R $HOME/Desktop/mining 
 
