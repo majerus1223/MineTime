@@ -17,7 +17,7 @@ service ssh start
 
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb -O $HOME/Desktop/mining/downloads/teamviewer_amd64.deb
 
-wget https://eggpool.net/dl/EggMinerGpuLin2.tgz?1516891778 -O $HOME/Desktop/mining/downloads/EggMiner.tgz.gz
+wget https://eggpool.net/dl/EggMinerGpuLin2.tgz -O $HOME/Desktop/mining/downloads/EggMiner.tgz.gz
 
 tar -xvzf $HOME/Desktop/mining/downloads/EggMiner.tgz.gz -C $HOME/Desktop/mining/miners
 
