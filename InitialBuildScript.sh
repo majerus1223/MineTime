@@ -31,7 +31,7 @@ apt-get -f install -y
 git -C $HOME/Desktop/mining/scripts/ clone https://github.com/majerus1223/MineTime
 
 # Copy configured miner.txt
-cp $HOME/Desktop/mining/scripts/miner.txt $HOME/Desktop/mining/miners/MineTime/miner.txt
+cp $HOME/Desktop/mining/scripts/MineTime/miner.txt $HOME/Desktop/mining/miners/EggMinerGpuLin2/miner.txt
 
 pause 10
 
