@@ -4,7 +4,8 @@ add-apt-repository ppa:graphics-drivers/ppa -y
 apt-get update
 sleep 5
 
-apt-get install htop screen git nvidia-387 openssh-server -y
+apt-get install htop screen git openssh-server -y
+apt-get install nvidia-387 
 mkdir -p $HOME/Desktop/mining/downloads
 mkdir -p $HOME/Desktop/mining/scripts
 mkdir -p $HOME/Desktop/mining/other
@@ -32,7 +33,8 @@ git -C $HOME/Desktop/mining/scripts/ clone https://github.com/majerus1223/MineTi
 # Copy configured miner.txt
 cp $HOME/Desktop/mining/scripts/miner.txt $HOME/Desktop/mining/miners/miner.txt
 
+pause 10
+
 #Set insane permissions
 chmod 777 -R $HOME/Desktop/mining 
 
-shutdown -r now
