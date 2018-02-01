@@ -4,7 +4,7 @@ add-apt-repository ppa:graphics-drivers/ppa -y
 apt-get update
 sleep 5
 
-apt-get install htop screen git openssh-server -y
+apt-get install htop screen git openssh-server sysstat -y
 apt-get install nvidia-387 -y
 mkdir -p $HOME/Desktop/mining/downloads
 mkdir -p $HOME/Desktop/mining/scripts
