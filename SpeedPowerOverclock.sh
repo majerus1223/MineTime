@@ -12,10 +12,10 @@ nvidia-settings -a [gpu:10]/GPUFanControlState=1 -a [fan:10]/GPUTargetFanSpeed=8
 nvidia-settings -a [gpu:11]/GPUFanControlState=1 -a [fan:11]/GPUTargetFanSpeed=85
 
 
-nvidia-smi -i 0 -pl 180
+nvidia-smi -i 0 -pl 190
 nvidia-smi -i 1 -pl 160
-nvidia-smi -i 2 -pl 180
-nvidia-smi -i 3 -pl 180
+nvidia-smi -i 2 -pl 190
+nvidia-smi -i 3 -pl 190
 nvidia-smi -i 4 -pl 160
 nvidia-smi -i 5 -pl 160
 nvidia-smi -i 6 -pl 160
@@ -27,17 +27,17 @@ nvidia-smi -i 11 -pl 160
 
 
 
-nvidia-settings -a [gpu:0]/GPUGraphicsClockOffset[3]=150
-nvidia-settings -a [gpu:1]/GPUGraphicsClockOffset[3]=100
-nvidia-settings -a [gpu:2]/GPUGraphicsClockOffset[3]=150
-nvidia-settings -a [gpu:3]/GPUGraphicsClockOffset[3]=125
+nvidia-settings -a [gpu:0]/GPUGraphicsClockOffset[3]=185
+nvidia-settings -a [gpu:1]/GPUGraphicsClockOffset[3]=240
+nvidia-settings -a [gpu:2]/GPUGraphicsClockOffset[3]=240
+nvidia-settings -a [gpu:3]/GPUGraphicsClockOffset[3]=240
 #POS card keeps overheating no overclock
-nvidia-settings -a [gpu:4]/GPUGraphicsClockOffset[3]=0
-nvidia-settings -a [gpu:5]/GPUGraphicsClockOffset[3]=100
-nvidia-settings -a [gpu:6]/GPUGraphicsClockOffset[3]=150
-nvidia-settings -a [gpu:7]/GPUGraphicsClockOffset[3]=100
+nvidia-settings -a [gpu:4]/GPUGraphicsClockOffset[3]=150
+nvidia-settings -a [gpu:5]/GPUGraphicsClockOffset[3]=240 
+nvidia-settings -a [gpu:6]/GPUGraphicsClockOffset[3]=240
+nvidia-settings -a [gpu:7]/GPUGraphicsClockOffset[3]=240
 #Crashed once
-nvidia-settings -a [gpu:8]/GPUGraphicsClockOffset[3]=100
-nvidia-settings -a [gpu:9]/GPUGraphicsClockOffset[3]=100
-nvidia-settings -a [gpu:10]/GPUGraphicsClockOffset[3]=100
-nvidia-settings -a [gpu:11]/GPUGraphicsClockOffset[3]=100
+nvidia-settings -a [gpu:8]/GPUGraphicsClockOffset[3]=205
+nvidia-settings -a [gpu:9]/GPUGraphicsClockOffset[3]=240
+nvidia-settings -a [gpu:10]/GPUGraphicsClockOffset[3]=240
+nvidia-settings -a [gpu:11]/GPUGraphicsClockOffset[3]=240
