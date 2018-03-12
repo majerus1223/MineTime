@@ -3,7 +3,7 @@
 
 #Check whoami
 if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
+  then echo "Run as root"
   exit
 fi
 
