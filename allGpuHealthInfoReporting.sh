@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #IP address to send to with URI
-ipandURI='http://ADDIP:9626/write?db=Mining'
+ipandURI='http://97.91.132.129:9626/write?db=Mining'
 while :
 do
 
