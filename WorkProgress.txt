@@ -1,0 +1,38 @@
+sed -n '/GPU/p' /home/noone/Desktop/log.out |tail -1 |sed '/GPU0/!d;s/.*GPU0 \([0-9]*\).*/\1/'
+218
+
+
+#!/bin/bash
+
+while :
+do
+	cat /home/noone/Desktop/log2.out
+	for i in {0..11}
+	do
+		
+		gpuBisRate=$(sed -n "/GPU$i/p" /home/noone/Desktop/log2.out |tail -1 |sed "/GPU$i/!d;s/.*GPU$i \([0-9]*\).*/\1/")
+		echo $"(curl -i -XPOST 'http://97.91.132.129:9626/write?db=Mining' --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuBisRate value=$gpuBisRate")"
+	done
+	
+	#echo > $HOME/Desktop/log2.out
+	echo "Alive, CTRL + C to stop"
+	
+	sleep 20
+done
+
+
+sed -n '/GPU0/p' /home/noone/Desktop/log2.out |tail -1 |sed '/GPU0/!d;s/.*GPU0 \([0-9]*\).*/\1/'
+
+
+[0-9]*
+[^,]*
+
+-
+noone@Miner12:~/Desktop/mining/miners/EggMinerGpuLin2$ sudo ./EggMinerGpuLin2 -i 10,0,0,0,0,0,0,0,0,0,0 -n JamesTestPhysicial2 &>> /home/noone/Desktop/log2.out
+
+
+sudo ./EggMinerGpuLin2 -i 50,50,50,50,50,50,50,50,50,50,50 >> /home/noone/Desktop/log2.out
+
+curl -i -XPOST 'http://97.91.132.129:9626/write?db=Mining' --data-binary "Stat_data,host=Gpu$i-Miner12,stat=c value=$data1"
+
+echo $"(curl -i -XPOST 'http://97.91.132.129:9626/write?db=Mining' --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuBisRate value=$data1")"
