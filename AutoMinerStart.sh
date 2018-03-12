@@ -29,7 +29,7 @@ rm -rf /home/noone/.cache/pytools/pdict-v2-pyopencl-invoker-cache-v1-py3.5.2.fin
 sleep 10
 
 
-
+#will fail if miner.default is not there.
 /home/noone/Desktop/mining/miners/EggMinerGpuLin2/EggMinerGpuLin2 -i 50
 
 
