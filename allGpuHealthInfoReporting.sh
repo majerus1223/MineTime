@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#IP address to send to with URI
+ipandURI='http://ADDIP:9626/write?db=Mining'
 while :
 do
 
@@ -19,12 +21,12 @@ do
 		gpuMemClock=$(nvidia-smi -i $i --format=csv,noheader --query-gpu=clocks.mem | grep -o '^[^ ]*')
 
 
-		curl -i -XPOST '' --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuFanSpeed value=$gpuFanSpeed"
-		curl -i -XPOST '' --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuPowerDraw value=$gpuPowerDraw"
-		curl -i -XPOST '' --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuTemp value=$gpuTemp"
-		curl -i -XPOST '' --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuUtil value=$gpuUtil"
-		curl -i -XPOST '' --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuClock value=$gpuClock"
-		curl -i -XPOST '' --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuMemClock value=$gpuMemClock"
+		curl -i -XPOST $ipandURI --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuFanSpeed value=$gpuFanSpeed"
+		curl -i -XPOST $ipandURI --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuPowerDraw value=$gpuPowerDraw"
+		curl -i -XPOST $ipandURI --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuTemp value=$gpuTemp"
+		curl -i -XPOST $ipandURI --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuUtil value=$gpuUtil"
+		curl -i -XPOST $ipandURI --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuClock value=$gpuClock"
+		curl -i -XPOST $ipandURI --data-binary "Stat_data,host=Gpu$i-Miner12,stat=gpuMemClock value=$gpuMemClock"
 
 	done
 	echo "Alive, CTRL + C to stop"
