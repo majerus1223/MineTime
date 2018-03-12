@@ -33,17 +33,17 @@ nvidia-smi -i 11 -pl 160
 
 
 
-nvidia-settings -a [gpu:0]/GPUGraphicsClockOffset[3]=200
-nvidia-settings -a [gpu:1]/GPUGraphicsClockOffset[3]=215
-nvidia-settings -a [gpu:2]/GPUGraphicsClockOffset[3]=200
-nvidia-settings -a [gpu:3]/GPUGraphicsClockOffset[3]=200
+nvidia-settings -a [gpu:0]/GPUGraphicsClockOffset[3]=220
+nvidia-settings -a [gpu:1]/GPUGraphicsClockOffset[3]=220
+nvidia-settings -a [gpu:2]/GPUGraphicsClockOffset[3]=220
+nvidia-settings -a [gpu:3]/GPUGraphicsClockOffset[3]=220
 #POS card keeps overheating no overclock
-nvidia-settings -a [gpu:4]/GPUGraphicsClockOffset[3]=200
+nvidia-settings -a [gpu:4]/GPUGraphicsClockOffset[3]=220
 nvidia-settings -a [gpu:5]/GPUGraphicsClockOffset[3]=220 
 nvidia-settings -a [gpu:6]/GPUGraphicsClockOffset[3]=220
 nvidia-settings -a [gpu:7]/GPUGraphicsClockOffset[3]=220
 #Crashed once
-nvidia-settings -a [gpu:8]/GPUGraphicsClockOffset[3]=215
+nvidia-settings -a [gpu:8]/GPUGraphicsClockOffset[3]=220
 nvidia-settings -a [gpu:9]/GPUGraphicsClockOffset[3]=220
 nvidia-settings -a [gpu:10]/GPUGraphicsClockOffset[3]=220
 nvidia-settings -a [gpu:11]/GPUGraphicsClockOffset[3]=220

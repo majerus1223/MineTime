@@ -14,10 +14,10 @@ fi
 gnome-terminal -e ./allGpuHealthInfoReporting.sh --window-with-profile=Miner --geometry 100x15+50+820
 
 echo "Started GPU Health Reporting..."
-sleep 10
+sleep 2
 
 #Start GPU and Set Power
-gnome-terminal -e ./BetaSpeedPowerOverclock.sh  
+gnome-terminal -e ./BetaSpeedPowerOverclock.sh  --geometry 75x25+1350
 
 echo "Started BETA Speed, Power and Overlock......"
 
